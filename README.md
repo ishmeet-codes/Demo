@@ -14,3 +14,8 @@ and hypotenuse of a right triangle.  The formula
 \int_0^1 x^n dx = \frac{1}{n+1}
 \]
 is something we all learn in Calculus $$
+
+  [stem]
+  ++++
+    e^{2\pi \sqrt{-1}} = 1.
+  ++++
