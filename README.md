@@ -19,3 +19,7 @@ is something we all learn in Calculus $$
   ++++
     e^{2\pi \sqrt{-1}} = 1.
   ++++
+
+   \[
+    e^{2\pi \sqrt{-1}} = 1,
+ \]
