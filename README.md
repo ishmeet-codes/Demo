@@ -4,6 +4,6 @@ $$`
 
 
 
-\begin{equation}
+$` \begin{equation}
 m = \frac { m _ { 0 } } { \sqrt { 1 - v ^ { 2 } / c ^ { 2 } } }
-\end{equation}
+\end{equation} `$
