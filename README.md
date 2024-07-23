@@ -7,7 +7,9 @@ $`
 $` \begin{equation}
 m = \frac { m _ { 0 } } { \sqrt { 1 - v ^ { 2 } / c ^ { 2 } } }
 \end{equation} `$
-$`( a + b ) ^ { 2 } = a ^ { 2 } + b ^ { 2 } + 2ab `$
+
+
+$$ ( a + b ) ^ { 2 } = a ^ { 2 } + b ^ { 2 } + 2ab $$
 
 $$ The formula $a^2 + b^2 = c^2$ relates the sides
 and hypotenuse of a right triangle.  The formula
