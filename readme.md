@@ -1,4 +1,4 @@
-Here is an inline equation: $ E = mc^2 $.
+Here is an inline equation: $$E=mc^2$$.
 
 And a display equation:
 $`
