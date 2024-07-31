@@ -1,0 +1,1 @@
+\begin{eqnarray} \bar\varepsilon&=&\frac{\int_0ˆ\infty\varepsilon \exp(-\beta\varepsilon)\,{\rmd}\varepsilon}{\int_0ˆ\infty \exp(-\beta\varepsilon)\,{\rmd}\varepsilon}\nonumber\\ &=&-\frac{{\rmd}}{{\rmd}\beta}\log\Biggl[\int_0ˆ\infty\exp (-\beta\varepsilon)\,{\rmd}\varepsilon\Biggr]=\frac1\beta=kT. \end{eqnarray}
