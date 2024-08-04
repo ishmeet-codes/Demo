@@ -1,7 +1,7 @@
 
-By definition, this is also the Maclaurin series for cos $x$. In Section 1.10, we will see that the series converges to cos $x$ at every $x$.
+By definition, this is also the Maclaurin series for cos \(x\). In Section 1.10, we will see that the series converges to cos $x$ at every \(x\).
 
-Because $ f^{(2n+1)}(0) = 0 $, the Taylor polynomials of orders $ 2n $ and $ 2n+1 $ are identical:
+Because \(f^{(2n+1)}(0) = 0 \), the Taylor polynomials of orders $ 2n $ and $ 2n+1 $ are identical:
 
 $$ P_{2n}(x) = P_{2n+1}(x) = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots + (-1)^n \frac{x^{2n}}{(2n)!} $$
 
