@@ -1,14 +1,12 @@
 ## LHopital Rule
 
->___
->
->If $\lim_{x \to a} f(x)$ ln *f(x) = L*, then
->
->  $\lim_{x \to a} f(x)$ = $\lim_{x \to a}$  $\( e^{ln f(x)} )\$ = $\ e^L \$.
->
->Here $\( \alpha \)$ may be either finite or infinite.
->
->___
+If $\lim_{x \to a} f(x)$ ln *f(x) = L*, then
+
+$\lim_{x \to a} f(x)$ = $\lim_{x \to a}$  $\( e^{ln f(x)} )\$ = $\ e^L \$.
+
+Here $\( \alpha \)$ may be either finite or infinite.
+
+
 
 ## __*EXAMPLE 8*__
 
@@ -67,7 +65,6 @@ $\ \lim_{x \to \infty}$ $\( (x)^{\frac{1}{x}} )\$ = $\ \lim_{x \to \infty}$ *f(x
 
 ## EXERCISE 6.6
 
-> ### Applying l'Hopital's Rule
-> Use l'Hopital's rule to find the limits in Exercise 1-42.
->
-> ## 1.
+### Applying l'Hopital's Rule
+ Use l'Hopital's rule to find the limits in Exercise 1-42.
+ ## 1.
