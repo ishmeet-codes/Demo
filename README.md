@@ -1,42 +1,8 @@
 
-1
-
-$$
-\left(\int_{-\infty}^{\infty} e^{-x^2}\right) =\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}e^{-(x^2+y^2)}dx\,dy
- $$
-
- 2
- 
-$$ 
-\left(\int_{-\infty}^{\infty} e^{-x^2}\right) = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}e^{-(x^2+y^2)}dx\,dy
-$$
-
-3
-
-
-$$
-\left(\int_{-\infty}^{\infty} e^{-x^2}\right) = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}e^{-(x^2+y^2)}dx\,dy
-$$
-
-4
-
-
-$$ 
-\left(\int_{-\infty}^{\infty} e^{-x^2}\right) = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}e^{-(x^2+y^2)}dx\,dy
-$$
-
-5
-
-$$
-\left(\int_{-\infty}^{\infty} e^{-x^2}\right) = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}e^{-(x^2+y^2)}dx\,dy
-$$
-
-
-Sure, here is the content in markdown:
 
 ---
 
-By definition, this is also the Maclaurin series for cos \(x\). In Section 8.10, we see that the series converges to cos \(x\) at every \(x\).
+By definition, this is also the Maclaurin series for cos \(x\). In Section 8.10, we will see that the series converges to cos \(x\) at every \(x\).
 
 Because \( f^{(2n+1)}(0) = 0 \), the Taylor polynomials of orders \(2n\) and \(2n+1\) are identical:
 
