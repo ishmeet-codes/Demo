@@ -65,4 +65,4 @@ In Exercises 1-8, find the Taylor polynomials of orders 0, 1, 2, and 3 generated
 5. \( f(x) = \sin x \), \( a = \pi/4 \)
 6. \( f(x) = \cos x \), \( a = \pi/4 \)
 7. \( f(x) = \sqrt{x} \), \( a = 4 \)
-8. \( f(x) = \sqrt{x + 4} \), \( a = 0 \)
+8. \( f(x) = \sqrt{x + 4} \), $$ a = 0 \)
