@@ -52,7 +52,7 @@ L'Hopital's rule gives
 
 $\ \lim_{x \to \infty}$ ln *f(x)* = $\ \lim_{x \to \infty}$ $(\frac{ln x}{x} \)$         $\( \frac{infty}{infty} \)$
 
-=$\ \lim_{x \to \infty} $(\frac{1/x}{1} \)$
+=$\ \lim_{x \to \infty}$  $(\frac{1/x}{1} \)$
 
 = $(\frac{0}{1} \)$ = 0.
 
@@ -67,4 +67,15 @@ $\ \lim_{x \to \infty}$ $\( (x)^{\frac{1}{x}} )\$ = $\ \lim_{x \to \infty}$ *f(x
 
 ### Applying l'Hopital's Rule
  Use l'Hopital's rule to find the limits in Exercise 1-42.
- ## 1.
+ 
+ ## 1. $\lim_{x \to 2}$ $\ \frac{(x-2)}{x^2 - 4} \$
+
+ ## 2. $\lim_{x \to -5}$ $\ \frac{(x^2-25)}{(x+5)} \$
+ 
+ ## 3. $\lim_{t \to -3}$ $\ \frac{(t^3-4t+15)}{(t^2-t-12)} \$
+ 
+ ## 4. $\ \lim_{t \to 1}$ $\ \frac{(t^3-1)}{(4t^3-t-3)} \$
+
+ ## 5. $\ \lim_{x \to \infty}$ $\ \frac{(5x^2-3x)}{(7x^2+1)} \$
+
+ 
