@@ -63,7 +63,7 @@ $$
 What can we do about the limit in Example 1(c)? A stronger form of L'Hôpital's rule says that whenever the rule gives \(0/0\) we can apply it again, repeating the process until we get a different result. With this stronger rule we get:
 
 $$
-\lim_{x \to 0} \frac{x - \sin x}{x^3} \implies \lim_{x \to 0} \frac{1 - \cos x}{3x^2} \implies \lim_{x \to 0} \frac{\sin x}{6x} \implies \lim_{x \to 0} \frac{1}{6} = 0
+\lim_{x \to 0} \frac{x - \sin x}{x^3} \implies \lim_{x \to 0} \frac{1 - \cos x}{3x^2} \implies \lim_{x \to 0} \frac{\sin x}{6x} \implies  \frac{1}{6} 
 $$
 
 
@@ -137,13 +137,13 @@ provided the latter limit exists. The $a$ here may itself be either finite or in
 **a)**
 
 $$
-\lim_{x \to 0} \frac{\sec x}{(\tan x)^2} = \lim_{x \to 0} \frac{\sec x \tan x}{2 \sec^2 x} = \lim_{x \to 0} \frac{\sin x}{2} = 0
+\lim_{x \to \frac{pi}{2 }} \frac{\sec x}{\tan x +1 } = \lim_{x \to \frac{pi}{2 }} \frac{\sec x \tan x}{2 \sec^2 x} = \lim_{x \to \frac{pi}{2 }} \frac{\sin x}{2} = 0
 $$
 
 **b)**
 
 $$
-\lim_{x \to \infty} \frac{\ln x}{\sqrt{x}} = \lim_{x \to \infty} \frac{\frac{1}{x}}{\frac{1}{2\sqrt{x}}} = \lim_{x \to \infty} \frac{2}{\sqrt{x}} = 0
+\lim_{x \to \infty} \frac{\ln x}{2\sqrt{x}} = \lim_{x \to \infty} \frac{\frac{1}{x}}{\frac{1}{\sqrt{x}}} = \lim_{x \to \infty} \frac{1}{\sqrt{x}} = 0
 $$
 
 
@@ -173,7 +173,7 @@ $$
 
 
   
-**EXAMPLE 7** Find $\lim_{x \to 0} \left( \frac{1}{\sin x} - \frac{1}{x} \right)$
+## EXAMPLE 7 Find $\lim_{x \to 0} \left( \frac{1}{\sin x} - \frac{1}{x} \right)$
 
 **Solution** If $x \to 0^+$ , then $\sin x \to 0^+$ and
 
@@ -213,7 +213,65 @@ Limits that lead to the indeterminate forms $1^\infty$, $0^0$, and $\infty^0$ ca
 
   
 
+If $\lim_{x \to a} f(x)$ ln $f(x) = L$, then
 
+$\lim_{x \to a} f(x)$ = $\lim_{x \to a} e^{ln f(x)}$ = $e^L$.
+
+Here $\alpha$ may be either finite or infinite.
+
+
+
+## EXAMPLE 8
+
+Show that $\lim_{x \to 0^+}$  $(1+x)^{\frac{1}{x}}$ = *e*.
+
+### __*Solution:-*__   
+The limit leads to the indeterminate form  $1^\infty$. We let $f(x)$ = $(1+x)^{\frac{1}{x}}$ 
+
+and find $\lim_{x \to 0^+}$ ln $f(x)$ . Since
+
+$ln f(x) = ln (1+x)^{\frac{1}{x}}$
+
+ = $\frac{1}{x} ln (1+x)$ ,
+ 
+
+ l'hopital's rule now applies to give    
+ 
+ $\lim_{x \to 0^+}$ ln *f(x)* =  $\lim_{x \to 0^+}$  $(\frac{ln(1+x)}{x} \)$         $\( \frac{0}{0} \)$
+
+$=\lim_{x \to 0^+}$ $(\frac{ln(1/1+x)}{x} \)$
+
+$= \frac{1}{1}  = 1$ .
+
+Therefore,
+
+$\lim_{x \to 0^+} (1+x)^{\frac{1}{x}}  = \lim_{x \to 0^+} f(x)  =  \lim_{x \to 0^+}  e^{ln f(x)}  = e^1  = e$
+
+## EXAMPLE 9
+
+Find $\lim_{x \to \infty} (x)^{\frac{1}{x}}$.
+
+### __*Solution:-*__
+The limit leads to the indeterminate form $\infty^0$. We let $f(x) =(x)^{\frac{1}{x}}$ and
+
+find  $\lim_{x \to \infty} ln f(x)$. Since 
+
+$lnf(x) = ln (x)^{\frac{1}{x}}$
+
+=  $(\frac{ln x}{x} \)$ ,
+
+L'Hopital's rule gives
+
+$\ \lim_{x \to \infty}$ ln *f(x)* = $\ \lim_{x \to \infty}$ $(\frac{ln x}{x} \)$                    $\( \frac{infty}{infty} \)$
+
+= $\ \lim_{x \to \infty}$  $(\frac{1/x}{1} \)$
+
+= $(\frac{0}{1} \)$ = 0.
+
+Therefore,
+
+$\ \lim_{x \to \infty}$ $\( (x)^{\frac{1}{x}} )\$ = $\ \lim_{x \to \infty}$ *f(x)* = $\ \lim_{x \to \infty}$ $\( e^{ln f(x)} )\$ =  $\ e^0 \$
+= 1
 
 
 
