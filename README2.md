@@ -15,147 +15,173 @@ If functions $f(x)$ and $g(x)$ are both zero at $x=0$ , then $lim_{x→a} f(x)/g
 from which we can calculate derivatives . 
 
 
-# Theorem 2
+# Theorem 1
+
+## L'Hopital's Rule (First Form)
 
 Suppose that $f(a) = g(x) = 0$ , that $f'(a)$ and $g'(a)$ exist, and that $g'(a) ≠ 0$ . Then 
 
 $$
-  lim_{x→0} \frac {f(x)} {g(x)} = \frac {f'(a)} {g'(a)}
+  lim_{x→0} \frac {f(x)} {g(x)} = \frac {f'(a)} {g'(a)} \tag{1}
 $$
 
-___________________________________
 
-# Example 1
+## Proof
 
-(A) $lim_{x→a} \frac{3x-Sin x} {x}= $\frac {3-Cos x} {1}$ = 2$
+Working backward from $f'(a)$ and $g'(a)$ , which are themselves limits, we have:
 
-(B) $lim_{x→a}$
+$$
+\frac{f'(a)}{g'(a)} = \lim_{x \to a} \frac{f(x) - f(a)}{x - a} \div \lim_{x \to a} \frac{g(x) - g(a)}{x - a} = \lim_{x \to a} \frac{\frac{f(x) - f(a)}{x - a}}{\frac{g(x) - g(a)}{x - a}}
+$$
 
-$\sqrt[1+x-1]{x}$
+This can be simplified to:
 
-  $$
-  = \frac {1} {2 
-    \sqrt[1+x]
-    {1}
-    =$\frac {1} {2}
-   $$
+$$
+= \lim_{x \to a} \frac{f(x) - f(a)}{g(x) - g(a)} = \lim_{x \to a} \frac{f(x) - 0}{g(x) - 0} = \lim_{x \to a} \frac{f(x)}{g(x)}
+$$
 
-(C) lim_{x→0} 
-$\frac {x-Sin x} {$x^3$}$ 
-    = $\frac{1-Cos x} {3$x^2}$
-    = $\frac{sin x} {6x}$ 
-    = $\frac{cos x} {6}$
-    = $\frac{1} {6}$
+## Example 1
 
-___________________________________
+**a)**
 
-# Theorem 3
+$$
+\lim_{x \to 0} \frac{3x - \sin x}{x} = \lim_{x \to 0} \frac{3 - \cos x}{1} = 2
+$$
 
-L'HOPITAL RULE (Stronger form)
+**b)**
 
-Suppose that f(a) = g(a) = 0 and f & g are differentiable on an open interval I containing a . Suppose also that g'(a) ≠ 0 on I if x ≠ a. Then 
+$$
+\lim_{x \to 0} \frac{\sqrt{1 + x} - 1}{x} = \lim_{x \to 0} \frac{2\sqrt{1 + x}}{1} = \frac{1}{2}
+$$
 
-lim_{x→a} $\frac {f(x)} {g(x)}$ = lim_{x→a} $\frac {f'(x)} {g'(x)}$
+**c)**
 
-if the limit on the right exists (or is infinity or minus infinity).
+$$
+\lim_{x \to 0} \frac{x - \sin x}{x^3} = \lim_{x \to 0} \frac{1 - \cos x}{3x^2} = ? \quad \text{Still } \frac{0}{0}
+$$
 
+What can we do about the limit in Example 1(c)? A stronger form of L'Hôpital's rule says that whenever the rule gives \(0/0\) we can apply it again, repeating the process until we get a different result. With this stronger rule we get:
 
-# Example 2
-
-  lim_{x→0}
-  $$
-  \sqrt[1+x] {-1} - (x/2)
-  $$
-  $\frac {x²}$
-
-  = lim_{x→0}
-  $\frac {(1/2) (1+x)^-½ - (1/2)} {2x}$
-
-  = lim_{x→0}
-  $\frac {-(1/4)
- 
-  $$
- 
-  (1+x)^-3/2
- 
-  $$
- 
-  }$ $\frac {2}$ = -1/8
-
-When you apply L'HOPITAL rule, look for a change from 0/0 to something else. This is where the limit is revealed .
+$$
+\lim_{x \to 0} \frac{x - \sin x}{x^3} \implies \lim_{x \to 0} \frac{1 - \cos x}{3x^2} \implies \lim_{x \to 0} \frac{\sin x}{6x} \implies \lim_{x \to 0} \frac{1}{6} = 0
+$$
 
 
-  # Example 3
+# Theorem 2
 
- lim_{x→0} $\frac {1-cos x } {x+x²}$
+## L'Hôpital's Rule (Stronger Form)
 
-  = lim_{x→0} $\frac {sin x} {1+2x}$ = 0/1 = 0
+Suppose that $f(a) = g(a) = 0$ and that $f$ and $g$ are differentiable on an open interval $I$ containing $a$. Suppose also that $g'(x) \neq 0$ on $I$ if $x \neq a$. Then
 
-If we continue to differentiate in an attempt to apply L'HOPITAL rule once more then,
+$$
+\lim_{x \to a} \frac{f(x)}{g(x)} = \lim_{x \to a} \frac{f'(x)}{g'(x)} \tag{2}
+$$
 
-  lim_{x→0} $\frac {1-cos x} {x+x²}$ = lim_{x→0} $\frac {sin x} {1+2x}$ = lim_{x→0} $\frac {cos x}{2}$ = 1/2 
-
-which is wrong 
-
-
-# Example 4 
-
-  lim_{x→0^+} $\frac {sin x} {x²}$
-      
-        *0/0 form*
- 
-  = lim_{x→0^+} $\frac {cos x} {2x}$ = ∞
-
-L'HOPITAL rule also applies to quotients that lead to the indeterminate form ∞/∞ . If f(x) and g(x) both approach infinity as x→a , then 
-
-  lim_{x→a} $\frac {f(x)} {g(x)}$   = lim_{x→a} $\frac {f'(x)} {g'(x)}$
-
- provided the latter limit exists. The a here may itself be either finite or infinite. 
+if the limit on the right exists (or is $\infty$ or $-\infty$ ).
 
 
- # Example 5
 
-(a) lim_{x→ -π/2} $\frac {sec x} {1+tan x}$       *∞/∞ form*
-    
-    = lim_{x→ -π/2} $\frac {sec x tan x} {sec² x}$ 
-    
-    = lim_{x→ -π/2} sin x = 1
 
- (b) lim_{x→∞} $\frac {ln x} {2√x}$ = lim_{x→∞} $\frac {1/x} {1/√x}$ = lim_{x→∞} 1/√x = 0
+## Example 2
 
-__________________________________ 
- 
+$$
+\lim_{x \to 0} \frac{\sqrt{1 + x} - 1 - (x/2)}{x^2} = \frac{0}{0}
+$$
+
+$$
+= \lim_{x \to 0} \frac{(1/2)(1 + x)^{-1/2} - (1/2)}{2x} = \frac{0}{0}
+$$
+
+$$
+= \lim_{x \to 0} \frac{-(1/4)(1 + x)^{-3/2}}{2} = -\frac{1}{8}
+$$
+
+When you apply L'Hôpital's rule, look for a change from $0/0$ to something else. This is where the limit is revealed.
+
+## Example 3
+
+$$
+\lim_{x \to 0} \frac{1 - \cos x}{x + x^2} = \frac{0}{0}
+$$
+
+$$
+= \lim_{x \to 0} \frac{\sin x}{1 + 2x} = 0 \quad \text{(limit is found)}
+$$
+
+If we continue to differentiate in an attempt to apply L'Hôpital's rule once more, we get:
+
+$$
+\lim_{x \to 0} \frac{1 - \cos x}{x + x^2} = \lim_{x \to 0} \frac{\sin x}{1 + 2x} = \lim_{x \to 0} \frac{\cos x}{2} = \frac{1}{2} \quad \text{(which is wrong)}
+$$
+
+## Example 4
+
+$$
+\lim_{x \to 0^+} \frac{\sin x}{x^2} = \frac{0}{0}
+$$
+
+$$
+= \lim_{x \to 0^+} \frac{\cos x}{2x} = \infty \quad \text{(answer is found)}
+$$
+
+L'Hôpital's rule also applies to quotients that lead to the indeterminate form $\infty / \infty$. If $f(x)$ and $g(x)$ both approach infinity as $x \to a$, then
+
+$$
+\lim_{x \to a} \frac{f(x)}{g(x)} = \lim_{x \to a} \frac{f'(x)}{g'(x)}
+$$
+
+provided the latter limit exists. The $a$ here may itself be either finite or infinite.
+
+## Example 5
+
+**a)**
+
+$$
+\lim_{x \to 0} \frac{\sec x}{(\tan x)^2} = \lim_{x \to 0} \frac{\sec x \tan x}{2 \sec^2 x} = \lim_{x \to 0} \frac{\sin x}{2} = 0
+$$
+
+**b)**
+
+$$
+\lim_{x \to \infty} \frac{\ln x}{\sqrt{x}} = \lim_{x \to \infty} \frac{\frac{1}{x}}{\frac{1}{2\sqrt{x}}} = \lim_{x \to \infty} \frac{2}{\sqrt{x}} = 0
+$$
+
+
 # Indeterminate Products and Differences
 
 We can sometimes handle the indeterminate form 0•∞ and ∞-∞ by using algebra to get 0/0 or ∞/∞ instead. Here again, we do not mean to suggest that there is a number 0•∞ or ∞/∞ any more than we mean to suggest that there is a number 0/0 or ∞/∞ . These forms are not numbers but descriptions of function's behaviour. 
 
-# Example 6 
+Sure, I can help transcribe the content in the image into Markdown format:
 
-  lim_{x→0+} x cot x  
-  
- $$
-       *0•∞ form* ,rewrite x cot x
-                    cot x = 1/tan x
-                    Now, 0/0
-                  
-                    
-  = lim_{x→0+} x•1/tan x
 
-  = lim_{x→0+} x/tan x 
+## Example 6
 
-  = lim_{x→0+} 1/sec²x = 1/1 = 1
-  $$
+$$
+\lim_{x \to 0} x \cot x 
+$$
+
+
+$$
+= \lim_{x \to 0} \frac{x}{\tan x} 
+$$
+
+
+
+$$
+= \lim_{x \to 0} \frac{1}{\sec^2 x} = \frac{1}{1} = 1 
+$$
+
 
   
 **EXAMPLE 7** Find $\lim_{x \to 0} \left( \frac{1}{\sin x} - \frac{1}{x} \right)$
 
-**Solution** If $x \to 0^+1$ , then $\sin x \to 0^+$ and
+**Solution** If $x \to 0^+$ , then $\sin x \to 0^+$ and
 
 $$
 \frac{1}{\sin x} - \frac{1}{x} \to \infty - \infty.
 $$
 
-Similarly, if $x \to 0^-1$, then $\sin x \to 0^-1$ and
+Similarly, if $x \to 0^-$, then $\sin x \to 0^-$ and
 
 $$
 \frac{1}{\sin x} - \frac{1}{x} \to -\infty - (-\infty) = -\infty + \infty.
@@ -183,7 +209,7 @@ $$
 
 **Indeterminate Powers**
 
-Limits that lead to the indeterminate forms \(1^\infty\), \(0^0\), and \(\infty^0\) can sometimes be handled by taking logarithms first. We use l'Hôpital's rule to find the limit of the logarithm and then exponentiate to find the original function behavior.
+Limits that lead to the indeterminate forms $1^\infty$, $0^0$, and $\infty^0$ can sometimes be handled by taking logarithms first. We use l'Hôpital's rule to find the limit of the logarithm and then exponentiate to find the original function behavior.
 
   
 
