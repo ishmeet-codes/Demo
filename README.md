@@ -1,5 +1,8 @@
 # Taylor and Maclaurin Series
 
+
+[view](./README (2).md)
+
 This section shows how functions that are infinitely differentiable generate power series called Taylor series. In many cases, these series can provide useful polynomial approximations of the generating functions.
 
 ### Series Representations
