@@ -3,7 +3,7 @@
 
 #### Homogeneous Function
 
-A polynomial in \( x \) and \( y \) is said to be homogeneous if all its terms are of the same degree. Generalizing this property to include non-polynomials, a function \( f(x, y) \) in two variables \( x \) and \( y \) is said to be a homogeneous function of degree \( n \) if for any positive number \( \lambda \),
+A polynomial in $x$ and $y$ is said to be homogeneous if all its terms are of the same degree. Generalizing this property to include non-polynomials, a function \( f(x, y) \) in two variables \( x \) and \( y \) is said to be a homogeneous function of degree \( n \) if for any positive number \( \lambda \),
 
 \[
 f(\lambda x, \lambda y) = \lambda^n f(x, y)
