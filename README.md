@@ -1,4 +1,14 @@
+$e^(xyz)$
+
+
+
+
+
+
 # Taylor and Maclaurin Series
+
+
+
 
 
 [view](./README2.md)
