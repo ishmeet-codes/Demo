@@ -3,144 +3,281 @@
 
 #### Homogeneous Function
 
-A polynomial in $x$ and $y$ is said to be homogeneous if all its terms are of the same degree. Generalizing this property to include non-polynomials, a function \( f(x, y) \) in two variables \( x \) and \( y \) is said to be a homogeneous function of degree \( n \) if for any positive number \( \lambda \),
+A polynomial in $x$ and $y$ is said to be homogeneous if all its terms are of the same degree. Generalizing this property to include non-polynomials, a function $f(x, y)$ in two variables $x$ and $y$ is said to be a homogeneous function of degree $n$ if for any positive number $\lambda$,
 
-\[
+$$
 f(\lambda x, \lambda y) = \lambda^n f(x, y)
-\]
+$$
 
-This definition can be further enlarged to include transcendental functions also as follows. A function \( f(x, y) \) is said to be homogeneous of degree \( n \) if it can be expressed as
+This definition can be further enlarged to include transcendental functions also as follows. A function $f(x, y)$ is said to be homogeneous of degree $n$ if it can be expressed as
 
-\[
+$$
 x^n \phi \left(\frac{y}{x}\right) \quad \text{or} \quad y^n \psi \left(\frac{x}{y}\right)
-\]
+$$
 
-Here \( n \) need not be an integer, \( n \) could be positive, negative or zero.
+Here $n$ need not be an integer, $n$ could be positive, negative or zero.
+
+
+### Example:
+
+1. $3x^2 - 2xy + \frac{15}{2} y^2$ is homogeneous of degree 2.
+2. $\frac{\sqrt{y} + \sqrt{x} }{ y +x}$ is homogeneous of degree $-\frac{1}{2}$.
+3. $\sin(\frac{y}{x}) + \tan^{-1}(\frac{x}{y})$ is homogeneous of degree zero.
+4. $\left(\frac{x+y}{xy}+ x^{\frac{2}{3}}y^{-\frac{1}{3}}\right)y^{-\frac{5}{3}}$ is not homogeneous.
+5. $x^{\frac{1}{3}}y^{-\frac{2}{3}} + x^{\frac{2}{3}}y^{-\frac{1}{3}}$ is not homogeneous.
+
+Homogeneous function $f$ of three variables $x, y, z$ of degree $n$ can be expressed as:
+
+$$
+f = x^n \phi\left(\frac{y}{x}, \frac{z}{x}\right) or  y^n \psi\left(\frac{x}{y}, \frac{z}{y}\right) or  z^n \chi\left(\frac{x}{z}, \frac{y}{z}\right)
+$$
 
 
 
-#### Example:
-1. \( 3x^2 - 2xy + \frac{15}{2}y^2 \) is homogeneous of degree 2
-2. \( \frac{\sqrt{5}x + \sqrt{5}y}{y - x} \) is homogeneous of degree \( -\frac{1}{2} \)
-3. \( \sin\left(\frac{x}{y}\right) + \tan^{-1}\left(\frac{x}{y}\right) \) is homogeneous of degree zero
-4. \( \left(\frac{x+y}{xy + \frac{3}{2}e^y}\right)y^{-\frac{3}{5}} \) is not homogeneous
-5. \( x^{\frac{1}{3}}y^{-\frac{3}{2}} + x^{\frac{2}{3}}y^{-\frac{1}{3}} \) is not homogeneous
-
-Homogeneous function \( f \) of three variables \( x \), \( y \), \( z \) of degree \( n \) can be expressed as
-
-\[
-f = x^n \phi \left(\frac{y}{x}, \frac{z}{x}\right) \quad \text{or} \quad y^n \psi \left(\frac{x}{y}, \frac{z}{y}\right) \quad \text{or} \quad z^n \chi \left(\frac{x}{z}, \frac{y}{z}\right)
-\]
-
-### Euler’s Theorem on Homogeneous Functions
+### Euler's Theorem on Homogeneous Functions
 
 #### Theorem:
-If \( f \) is a homogeneous function of \( x \), \( y \) of degree \( n \) then
+*If f is a homogeneous function of x, y of degree n then:*
 
-\[
-x \frac{\partial f}{\partial x} + y \frac{\partial f}{\partial y} = n f \quad \text{(1)}
-\]
+$$
+x \frac{\partial f}{\partial x} + y \frac{\partial f}{\partial y} = nf
+$$
 
 #### Proof:
-Since \( f \) is a homogeneous function
+Since $f$ is a homogeneous function of degree $n$, it can be written in the form:
+
+$$
+f(x, y) = x^n \phi\left(\frac{y}{x}\right)
+$$
+
+Differentiating partially w.r.t. $x$ and $y$, we get:
+
+$$
+\frac{\partial f}{\partial x} = n x^{n-1}\phi + x^{n}.\phi . \frac{-y}{x^2} 
+$$
+
+
+$$
+\frac{\partial f}{\partial y} = x^{n} \phi . \frac{1}{x}
+$$
+
+Multiplying (3) by $x$ and (4) by $y$ and adding, we have:
+
+$$
+x \frac{\partial f}{\partial x} + y \frac{\partial f}{\partial y} = x^n n \phi -x^{n-1}y\phi' +yx^{n-1}\phi'
+$$
+
+$$
+= x^n n \phi = n.f
+$$
+
+Thus, differential operator $x \frac{\partial }{\partial x} + y \frac{\partial }{\partial y}$ operating on a homogeneous function $f$ of degree $n$ amounts to multiplication by $n$.
+
+#### Corollary 1:
+If $f$ is a homogeneous function of degree $n$, then:
+
+$$
+x^2 \frac{\partial^2 f}{\partial x^2} + 2xy \frac{\partial^2 f}{\partial x \partial y} + y^2 \frac{\partial^2 f}{\partial y^2} = n(n - 1) f
+$$
 
 
 
-Here is the markdown version of the provided content:
+### Proof:
 
----
+Differentiating Euler's result (1) w.r.t. $x$ and $y$ respectively, we get:
+
+$$
+\frac{\partial f}{\partial x} + x \frac{\partial^2 f}{\partial x^2} + y \frac{\partial^2 f}{\partial y \partial x} = n \frac{\partial f}{\partial x} \quad \text{(6)}
+$$
+
+$$
+x \frac{\partial^2 f}{\partial x \partial y} + \frac{\partial f}{\partial y} + y \frac{\partial^2 f}{\partial y^2} = n \frac{\partial f}{\partial y} \quad \text{(7)}
+$$
+
+Multiplying (6) by $x$ and (7) by $y$ and adding, we have:
+
+$$
+x^2 f_{xx} + y^2 f_{yy} + 2xy f_{xy} = (n-1)(x f_x + y f_y) = n(n-1)f
+$$
+
+where we have used Euler’s theorem (1) and assumed that $f_{xy} = f_{yx}$.
+
+
+### Euler's Theorem for Three Variables
+
+#### Theorem:
+*If f is a homogeneous function of three independent variables x, y, z of order n, then:*
+
+$$
+x f_x + y f_y + z f_z = nf
+$$
+
+#### Proof:
+Express $f$ as:
+
+$$
+f = x^n \phi\left(\frac{y}{x}, \frac{z}{x}\right) = x^{n} \phi(u,v)
+$$
+
+where $u = \frac{y}{x}, v = \frac{z}{x}$.
+
+Differentiating (9) partially w.r.t. $x, y, z$, respectively:
+
+Here's the content of the image written in Markdown format:
+
+$$
+f_x = n x^{n-1} \phi + x^n \left( \frac{\partial \phi}{\partial u} \frac{\partial u}{\partial x} + \frac{\partial \phi}{\partial v} \frac{\partial v}{\partial x} \right)
+$$
+
+$$
+f_x = n x^{n-1} \phi + x^n \left[ \frac{\partial \phi}{\partial u} \left( \frac{-y}{x^2} \right) + \frac{\partial \phi}{\partial v} \left( \frac{-z}{x^2} \right) \right] \quad \text{(10)}
+$$
+
+$$
+f_y = x^n \left[ \frac{\partial \phi}{\partial u} \frac{\partial u}{\partial y} + \frac{\partial \phi}{\partial v} \frac{\partial v}{\partial y} \right] = x^n \left[ \frac{\partial \phi}{\partial u} \frac{1}{x} + 0 \right] \quad \text{(11)}
+$$
+
+$$
+f_z = x^n \left[ \frac{\partial \phi}{\partial u} \frac{\partial u}{\partial z} + \frac{\partial \phi}{\partial v} \frac{\partial v}{\partial z} \right] = x^n \left[ 0 + \frac{\partial \phi}{\partial v} \left( \frac{1}{x} \right) \right] \quad \text{(12)}
+$$
+
+
+
+Multiplying (10), (11), (12) by $x, y, z$ respectively and adding the resultant equations, we get:
+
+$$
+x f_x + y f_y + z f_z = n x^n \phi - x^{n-1} \left( y \frac{\partial \phi}{\partial u} + z \frac{\partial \phi}{\partial v} \right) 
+$$
+
+$$
+yx^{n-1} \frac{\partial \phi}{\partial u} + zx^{n-1} \frac{\partial \phi}{\partial v}
+$$
+
+$$
+= n x^n \phi = nf
+$$
+
+
 
 ## Worked Out Examples
 
 **Example 1:** Find the degree of the following homogeneous functions:
 
-a. \( x^2 - 2xy + y^2 \)
+a. $x^2 - 2xy + y^2$
 
-b. \( \log y - \log x \)
+b. $\log y - \log x$
 
-c. \( (\sqrt{x^2 + y^2})^3 \)
+c. $(\sqrt{x^2 + y^2})^3$
 
-d. \( x^{\frac{1}{3}} y^{-\frac{4}{3}} \tan^{-1}(y/x) \)
+d. $x^{\frac{1}{3}} y^{-\frac{4}{3}} \tan^{-1}(y/x)$
 
-e. \( 3x^2 y^2 + 5x^2 y^2 + 4x^4 \)
+e. $3x^2 y^2 + 5x^2 y^2 + 4x^4$
 
-f. \( [x^2/(x^2+y^2)]^{\frac{1}{3}} \)
+f. $[x^2/(x^2+y^2)]^{\frac{1}{3}}$
 
 **Ans:**
 
 a. 2
 
-b. \( \log y - \log x = \ln \left( \frac{y}{x} \right) = x^0 \ln \left( \frac{y}{x} \right) \) degree zero
+b. $\log y - \log x = \ln \left( \frac{y}{x} \right) = x^0 \ln \left( \frac{y}{x} \right)$ degree zero
 
-c. \( (\sqrt{x^2+y^2})^3 = x^3 \sqrt{1 + \left(\frac{y}{x}\right)^2} \)
+c. $(\sqrt{x^2+y^2})^3 = x^3 \sqrt{1 + \left(\frac{y}{x}\right)^2}$ degree 3
 
-d. \( x^{\frac{1}{3}} y^{-\frac{4}{3}} \tan^{-1}(y/x) = x^{-1} \cdot x^{1-\frac{1}{3}} \cdot \tan^{-1} \frac{y}{x} = -x^{-1} y^{-\frac{4}{3}} \tan^{-1} x^{-1} \)
+d. $x^{\frac{1}{3}} y^{-\frac{4}{3}} \tan^{-1}(y/x) = x^{-1} \cdot x^{1-\frac{1}{3}} \cdot \tan^{-1} \frac{y}{x} = -x^{-1} y^{-\frac{4}{3}} \tan^{-1} x^{-1}$
 
    degree: -1
 
 e. degree 4
 
-f. \[ \left[ \frac{x^2}{x^2+y^2} \right]^{\frac{1}{3}} = x^{-\frac{4}{3}} \left[ 1 + \left(\frac{y}{x}\right)^2 \right] \]
+f. $\left[ \frac{x^2}{x^2+y^2} \right]^{\frac{1}{3}} = x^{-\frac{4}{3}} \left[ 1 + \left(\frac{y}{x}\right)^2 \right]$
 
    degree = -2/3.
 
 **Example 2:** Verify Euler’s theorem for the following functions by computing both sides of Euler’s Equation (1) directly:
 
-i. \( (ax+by)^{\frac{1}{3}} \)
+i. $(ax+by)^{\frac{1}{3}}$
 
-ii. \( x^{\frac{1}{3}} y^{-\frac{4}{3}} \tan^{-1}(y/x) \)
+ii. $x^{\frac{1}{3}} y^{-\frac{4}{3}} \tan^{-1}(y/x)$
 
 **Solution:**
 
-i. \( f = (ax+by)^{\frac{1}{3}} \) is a homogeneous function of degree \( \frac{1}{3} \)
+i. $f = (ax+by)^{\frac{1}{3}}$ is a homogeneous function of degree $\frac{1}{3}$
 
 Differentiating \( f \) partially w.r.t. \( x \) and \( y \), we get
 
-\[ f_x = \frac{\partial f}{\partial x} = \frac{1}{3} (ax+by)^{-\frac{2}{3}} \cdot a \]
+$$
+f_x = \frac{\partial f}{\partial x} = \frac{1}{3} (ax+by)^{-\frac{2}{3}} \cdot a 
+$$
 
-\[ f_y = \frac{\partial f}{\partial y} = \frac{1}{3} (ax+by)^{-\frac{2}{3}} \cdot b \]
+$$
+f_y = \frac{\partial f}{\partial y} = \frac{1}{3} (ax+by)^{-\frac{2}{3}} \cdot b 
+$$
 
-Multiplying by \( x \) and \( y \) and adding, we get the L.H.S. of (1)
+Multiplying by $x$ and $y$ and adding, we get the L.H.S. of (1)
 
-\[ x f_x + y f_y = \frac{1}{3} (ax+by)^{-\frac{2}{3}} ax + \frac{1}{3} (ax+by)^{-\frac{2}{3}} by \]
+$$
+x f_x + y f_y = \frac{1}{3} (ax+by)^{-\frac{2}{3}} ax + \frac{1}{3} (ax+by)^{-\frac{2}{3}} by
+$$
 
-\[ = \frac{1}{3} (ax+by)^{-\frac{2}{3}} (ax+by) \]
+$$
+= \frac{1}{3} (ax+by)^{-\frac{2}{3}} (ax+by)
+$$
 
-\[ = \frac{1}{3} (ax+by)^{\frac{1}{3}} = \frac{1}{3} f \]
+$$
+= \frac{1}{3} (ax+by)^{\frac{1}{3}} = \frac{1}{3} f 
+$$
 
-Since \( f \) is a homogeneous function of degree \( \frac{1}{3} \), the R.H.S. of (1) is \( nf = \frac{1}{3} f \).
+Since $f$ is a homogeneous function of degree $\frac{1}{3}$, the R.H.S. of (1) is $nf = \frac{1}{3} f$.
 
 Thus
 
-\[ x f_x + y f_y = L.H.S. = \frac{1}{3} f = R.H.S. \]
+$$
+x f_x + y f_y = L.H.S. = \frac{1}{3} f = R.H.S. 
+$$
 
-ii. \( f = x^{\frac{1}{3}} y^{-\frac{4}{3}} \tan^{-1}(y/x) \) is homogeneous function of degree \(-1\)
+ii. $f = x^{\frac{1}{3}} y^{-\frac{4}{3}} \tan^{-1}(y/x)$ is homogeneous function of degree $-1$
 
-\[ f_x = \frac{1}{3} x^{-\frac{2}{3}} y^{-\frac{4}{3}} \tan^{-1}\left(\frac{y}{x}\right) + x^{\frac{1}{3}} y^{-\frac{7}{3}} \cdot \frac{-y}{x^2} \]
+$$
+f_x = \frac{1}{3} x^{-\frac{2}{3}} y^{-\frac{4}{3}} \tan^{-1}\left(\frac{y}{x}\right) + x^{\frac{1}{3}} y^{-\frac{7}{3}} \cdot \frac{-y}{x^2} 
+$$
 
-\[ f_y = x^{\frac{1}{3}} \left( \frac{4}{3} \right) y^{-\frac{7}{3}} \tan^{-1} \left( \frac{y}{x} \right) + x^{\frac{1}{3}} y^{-\frac{4}{3}} \frac{1}{x^2} \]
+$$
+f_y = x^{\frac{1}{3}} \left( \frac{4}{3} \right) y^{-\frac{7}{3}} \tan^{-1} \left( \frac{y}{x} \right) + x^{\frac{1}{3}} y^{-\frac{4}{3}} \frac{1}{x^2} 
+$$
 
-\[ f_y x + f_x y = \frac{1}{3} x^{-\frac{2}{3}} y^{-\frac{4}{3}} \tan^{-1}(y/x) + x^{\frac{1}{3}} y^{-\frac{4}{3}} \cdot \frac{1}{x^2} \]
+$$
+f_y x + f_x y = \frac{1}{3} x^{-\frac{2}{3}} y^{-\frac{4}{3}} \tan^{-1}(y/x) + x^{\frac{1}{3}} y^{-\frac{4}{3}} \cdot \frac{1}{x^2} 
+$$
 
-\[ -x^{\frac{1}{3}} y^{-\frac{4}{3}} \tan^{-1} \left( \frac{y}{x} \right) - x f_x \]
+$$
+-x^{\frac{1}{3}} y^{-\frac{4}{3}} \tan^{-1} \left( \frac{y}{x} \right) - x f_x
+$$
 
-**Example 3:** If \( u = \log \frac{x^2+y^2}{x+y} \), prove that
+**Example 3:** If $u = \log \frac{x^2+y^2}{x+y}$, prove that
 
-\[ xu_x + yu_y = 1 \]
+$$
+xu_x + yu_y = 1
+$$
 
 **Solution:**
 
 Let
 
-\[ f = e^u = \frac{x^2+y^2}{x+y} = \frac{x^2}{1+\left(\frac{y}{x}\right)^2} \]
+$$
+f = e^u = \frac{x^2+y^2}{x+y} = \frac{x^2}{1+\left(\frac{y}{x}\right)^2} 
+$$
 
-\[ x f_p \left( \frac{y}{x} \right) \]
+$$
+x f_p \left( \frac{y}{x} \right) 
+$$
 
 f is a homogeneous function of degree 1.
 
-Applying Euler’s theorem for the function \( f \), we get
+Applying Euler’s theorem for the function $f$, we get
 
-\[ x f_x + y f_y = nf = f \]
+$$
+x f_x + y f_y = nf = f
+$$
 
 Since \( f = e^u \), \( f_x = e^u u_x, f_y = e^u u_y \)
 
@@ -1260,56 +1397,59 @@ Certainly! Here is the content from the image written in Markdown:
    **Hint**: 
    \[
    V = \frac{1}{3}\pi r^2 h = \frac{1}{3}\pi r^3 \ \text{(as} \ r = h), \ \frac{dV}{V} = \frac{3dr}{r}, \ r = 5, \ dr = 0.02
-   \]
 
-   **Answer**: 
-   \[
+$$
+**Answer**: 
+
+$$
    1.2\%
-   \]
+$$
 
-9. Calculate the error in \(R\) if \(R = E/l\) and possible errors in \(E\) and \(l\) are 20% and 10% respectively.
+9. Calculate the error in \(R\) if \(R = E/l\) and possible errors in $E$ and $l$ are 20% and 10% respectively.
 
-   **Hint**: 
-   \[
+**Hint**: 
+$$
    \frac{dR}{R} \times 100 = \left(\frac{dE}{E} - \frac{dl}{l}\right) \times 100 = 20 - 10 = 10
-   \]
+$$
 
-   **Answer**: 
-   \[
+**Answer**:
+   
+$$
    10\%
-   \]
+$$
 
-10. The diameter and the height of a right circular cylinder are measured as 4 cm and 6 cm respectively, with a possible error of 0.1 cm. Find approximately the maximum possible error in the computed value of the volume and surface area.
+11. The diameter and the height of a right circular cylinder are measured as 4 cm and 6 cm respectively, with a possible error of 0.1 cm. Find approximately the maximum possible error in the computed value of the volume and surface area.
 
    **Hint**: 
-   \[
-   V = \pi r^2 h = \frac{\pi D^2 H}{4}, \ dV = \frac{\pi}{4} [2D HdD + D^2 dH], \ S = 2\pi rh = \pi DH, \ dS = \pi [HdD + DdH].
-   \]
+$$
+V = \pi r^2 h = \frac{\pi D^2 H}{4}, \ dV = \frac{\pi}{4} [2D HdD + D^2 dH], \ S = 2\pi rh = \pi DH, \ dS = \pi [HdD + DdH].
+$$
 
-   **Answer**: 
-   \[
+**Answer**: 
+$$
    1.6\pi \ \text{cu. cm}; \ \pi \ \text{sq. cm}
-   \]
-
----
+$$
 
 ### **3.11 DIFFERENTIATION UNDER INTEGRAL SIGN: LEIBNITZ'S RULE**
 
-We know from the fundamental theorem on integral calculus that if \(f(x)\) is a continuous function and
-\[
+We know from the fundamental theorem on integral calculus that if $f(x)$ is a continuous function and
+
+$$
 \phi(x) = \int_a^x f(t)dt, \text{then}
-\]
-\[
+$$
+
+
+$$
 \frac{d\phi}{dx} = f(x) = \frac{d}{dx} \int_a^x f(t)dt = f(x)
-\]
-i.e., the derivative of a definite integral w.r.t. the upper limit is equal to the integrand in which the variable of integration \(t\) is replaced by the upper limit \(x\).
+$$
+
+i.e., the derivative of a definite integral w.r.t. the upper limit is equal to the integrand in which the variable of integration \(t\) is replaced by the upper limit $x$.
 
 **Example 1**: 
-\[
+
+$$
 (i) \ \frac{d}{dx} \int_1^x \frac{1}{t} dt = \frac{1}{x}, \quad x > 0
-\]
-Now if \(F(x)\) is some antiderivative of a continuous function \(f(x)\), then the Newton-Leibnitz formula \(\int_a^b f(x)dx = F(b) - F(a)\) yields a practical and convenient method of computing definite integrals in cases where the anti-derivative of the integrand is known. This general method has extended.
+$$
 
----
+Now if $F(x)$ is some antiderivative of a continuous function $f(x)$, then the Newton-Leibnitz formula $\int_a^b f(x)dx = F(b) - F(a)$ yields a practical and convenient method of computing definite integrals in cases where the anti-derivative of the integrand is known. This general method has extended.
 
-This content has been transcribed in markdown format, including equations, examples, and answers.
