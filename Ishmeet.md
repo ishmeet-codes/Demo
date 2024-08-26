@@ -203,7 +203,7 @@ ii. $x^{\frac{1}{3}} y^{-\frac{4}{3}} \tan^{-1}(y/x)$
 
 i. $f = (ax+by)^{\frac{1}{3}}$ is a homogeneous function of degree $\frac{1}{3}$
 
-Differentiating \( f \) partially w.r.t. \( x \) and \( y \), we get
+Differentiating $f$ partially w.r.t. $x$ and $y$, we get
 
 $$
 f_x = \frac{\partial f}{\partial x} = \frac{1}{3} (ax+by)^{-\frac{2}{3}} \cdot a 
@@ -279,65 +279,90 @@ $$
 x f_x + y f_y = nf = f
 $$
 
-Since \( f = e^u \), \( f_x = e^u u_x, f_y = e^u u_y \)
+Since $f = e^u$, $f_x = e^u u_x, f_y = e^u u_y$
 
-\[ e^u u_x + ye^u u_y = f e^u \]
+$$
+e^u u_x + ye^u u_y = f e^u 
+$$
 
-since \( e^u \neq 0 \), \( xu_x + yu_y = 1 \).
+since $e^u \neq 0$, $xu_x + yu_y = 1$.
 
-**Example 4:** Show that \( xu_x + yu_y + zu_z = -2 \cot u \) when
+**Example 4:** Show that $xu_x + yu_y + zu_z = -2 \cot u$ when
 
-\[ u = \cos^{-1} \left( \frac{x^3+y^3+z^3}{ax+by+cz} \right) \]
+$$
+u = \cos^{-1} \left( \frac{x^3+y^3+z^3}{ax+by+cz} \right)
+$$
 
 **Solution:**
 
 Let
 
-\[ f = \cos u = \frac{x^3+y^3+z^3}{ax+by+cz} \]
+$$ 
+f = \cos u = \frac{x^3+y^3+z^3}{ax+by+cz} 
+$$
 
-Here \( f \) is a homogeneous function of degree 2 in the three variables \( x, y, z \). By Euler’s theorems 
+Here $f$ is a homogeneous function of degree 2 in the three variables $x, y, z$. By Euler’s theorems 
 
-Here is the markdown version of the provided content:
 
----
+$$
+x f_x + y f_y + z f_z = 2 f.
+$$
 
-\[x f_x + y f_y + z f_z = 2 f.\]
+Now differentiating $f$ with respect to $x, y, z$ respectively, we get
 
-Now differentiating \(f\) with respect to \(x, y, z\) respectively, we get
-
-\[f_x = - \sin u \cdot u_x, f_y = -\sin u \cdot u_y, f_z = - \sin u \cdot u_z.\]
+$$
+f_x = - \sin u \cdot u_x, f_y = -\sin u \cdot u_y, f_z = - \sin u \cdot u_z.
+$$
 
 Substituting
 
-\[x f_x + y f_y + z f_z = -\sin u (x u_x + y u_y + z u_z) = 2f\]
+$$
+x f_x + y f_y + z f_z = -\sin u (x u_x + y u_y + z u_z) = 2f
+$$
 
-\[= 2 \cos u\]
+$$
+= 2 \cos u
+$$
 
 or
 
-\[x u_x + y u_y + z u_z = \frac{-2 \cos u}{\sin u} = -2 \cot u\]
+$$
+x u_x + y u_y + z u_z = \frac{-2 \cos u}{\sin u} = -2 \cot u
+$$
 
-**Example 5:** Prove that \(x u_x + y u_y = \frac{5}{2} \tan u\) if
+**Example 5:** Prove that $x u_x + y u_y = \frac{5}{2} \tan u$ if
 
-\[u = \sin^{-1} \left(\frac{x^3 + y^3}{\sqrt{x + y^5}}\right)\]
+$$
+u = \sin^{-1} \left(\frac{x^3 + y^3}{\sqrt{x + y^5}}\right)
+$$
 
 **Solution:** Let
 
-\[f = \sin u = \frac{x^3 + y^3}{\sqrt{x + y^5}}\]
+$$
+f = \sin u = \frac{x^3 + y^3}{\sqrt{x + y^5}}
+$$
 
-then \(f\) is a homogeneous function of degree \(\frac{5}{2}\) since
+then $f$ is a homogeneous function of degree $\frac{5}{2}$ since
 
-\[f = \frac{x^3}{\sqrt{x}} \left(\frac{1+y/x^3}{1+(y/x)^5}\right) = x^{\frac{5}{2}} \phi(y/x).\]
+$$
+f = \frac{x^3}{\sqrt{x}} \left(\frac{1+y/x^3}{1+(y/x)^5}\right) = x^{\frac{5}{2}} \phi(y/x).
+$$
 
-Applying Euler’s theorem for \(f\), we have
+Applying Euler’s theorem for $f$, we have
 
-\[x f_x + y f_y = nf = \frac{5}{2} f.\]
+$$
+x f_x + y f_y = nf = \frac{5}{2} f.
+$$
 
-Since \(f = \sin u, f_x = \cos u \cdot u_x, f_y = \cos u \cdot u_y\) so that
+Since $f = \sin u, f_x = \cos u \cdot u_x, f_y = \cos u \cdot u_y$ so that
 
-\[x \cdot \cos u u_x + y \cos u u_y = \frac{5}{2} f = \frac{5}{2} \sin u\]
+$$
+x \cdot \cos u u_x + y \cos u u_y = \frac{5}{2} f = \frac{5}{2} \sin u
+$$
 
-\[x u_x + y u_y = \frac{5}{2} \cdot \frac{\sin u}{\cos u} = \frac{5}{2} \tan u\]
+$$
+x u_x + y u_y = \frac{5}{2} \cdot \frac{\sin u}{\cos u} = \frac{5}{2} \tan u
+$$
 
 **Example 6:** If \(u = x^3 y^2 \sin^{-1}(y/x)\) show that
 
@@ -1195,136 +1220,134 @@ Errors in measured data will result in error in the estimated value. For example
 
 For a function \(z = f(x, y)\), the actual error \(\Delta z\) in \(z\) can be calculated approximately by using the differential \(dz\), for given errors \(\Delta x\), \(\Delta y\) in \(x\) and \(y\) respectively.
 
----
+
 
 ### Worked Out Examples
 
-**Example 1:** Using differentials, calculate approximately the value of \(f(0.999)\) where \(f(x) = 2x^4 + 7x^3 - 8x^2 + 3x + 1\).
+**Example 1:** Using differentials, calculate approximately the value of $f(0.999)$ where $f(x) = 2x^4 + 7x^3 - 8x^2 + 3x + 1$.
 
-**Solution:** Choose \(x = 1\) and \(\Delta x = -0.001\) so that \(x + \Delta x = 1 + (-0.001) = 0.999\). Thus to calculate
+**Solution:** Choose $x = 1$ and $\Delta x = -0.001$ so that $x + \Delta x = 1 + (-0.001) = 0.999$. Thus to calculate
 
-\[
+$$
 f(0.999) = f(x + \Delta x) = f(x) + \Delta f
-\]
+$$
 
-\[
+$$
 \approx f(x) + f'(x)\Delta x \approx f(1) + f'(1)(-0.001)
-\]
+$$
 
-Here \(f(1) = 2.1 + 7.1 - 8.1 + 3.1 + 1 = 5\) and 
+Here $f(1) = 2.1 + 7.1 - 8.1 + 3.1 + 1 = 5$ and 
 
-\[
+$$
 f'(x) = 8x^3 + 21x^2 + 16x + 3
-\]
+$$
 
 so
 
-\[
+$$
 f'(1) = 8.1 + 21.1 + 16.1 + 3 = 16
-\]
+$$
 
 Thus the approximate value of
 
-\[
+$$
 f(0.999) \approx 5 + 16(-0.001) = 5 - 0.016 = 4.984
-\]
+$$
 
----
 
-Certainly! Here's the content from the image written in Markdown:
 
----
-
-**Example 2**: Considering the volume of a spherical shell as an increment of volume of a sphere, calculate approximately the volume of a spherical shell whose inner diameter is 8 inches and whose thickness is \(\frac{1}{16}\) inch (Fig. 3.2).
+**Example 2**: Considering the volume of a spherical shell as an increment of volume of a sphere, calculate approximately the volume of a spherical shell whose inner diameter is 8 inches and whose thickness is $\frac{1}{16}$ inch (Fig. 3.2).
 
 ![Fig. 3.2](path/to/image.png)
 
-**Solution**: Volume of a sphere of radius \(r\) is \(V = \frac{4}{3} \pi r^3\). Now the volume of the spherical shell \(\Delta V\) is the difference between volume \(V_o\) of outer sphere and volume \(V_i\) of inner sphere. Thus volume of the spherical shell is \(\Delta V = V_o - V_i\). Here radius of the outer sphere \(r = 4\) in (diameter is 8 inches) choose \(r = 4\) and \(dr = \frac{1}{16}\).
+**Solution**: Volume of a sphere of radius $r$ is $V = \frac{4}{3} \pi r^3$. Now the volume of the spherical shell $\Delta V$ is the difference between volume $V_o$ of outer sphere and volume $V_i$ of inner sphere. Thus volume of the spherical shell is $\Delta V = V_o - V_i$. Here radius of the outer sphere $r = 4$ in (diameter is 8 inches) choose $r = 4$ and $dr = \frac{1}{16}$.
 
 Then 
-\[
+
+$$
 V\left(4 + \frac{1}{16}\right) - V(4) = V(r + \Delta r) - V(r) = \Delta V \approx dV = \frac{4}{3} \cdot 3\pi r^2 dr \text{ at } r = 4 \text{ and } dr = \frac{1}{16}
-\]
-\[
+$$
+
+$$
 = 4\pi (4)^2 \left(\frac{1}{16}\right) = 4\pi \text{ cubic inches.}
-\]
+$$
 
----
 
-**Example 3**: The time \(T\) of a complete oscillation of a simple pendulum of length \(L\) is governed by the equation \(T = 2\pi \sqrt{\frac{L}{g}}\) where \(g\) is a constant.
 
-**i**. Find the approximate error in the calculated value of \(T\) corresponding to an error of 2% in the value of \(L\).
+**Example 3**: The time $T$ of a complete oscillation of a simple pendulum of length $L$ is governed by the equation $T = 2\pi \sqrt{\frac{L}{g}}$ where $g$ is a constant.
+
+**i**. Find the approximate error in the calculated value of $T$ corresponding to an error of 2% in the value of $L$.
 
 **ii**. By what percentage should the length be changed in order to correct a loss of 2 minutes per day?
 
 **Solution**:
 
-**i**. Taking log: \(\ln T = \ln 2\pi + \frac{1}{2} \ln L - \frac{1}{2} \ln g\).
+**i**. Taking log: $\ln T = \ln 2\pi + \frac{1}{2} \ln L - \frac{1}{2} \ln g$.
 
-Differentiating \(\frac{dT}{T} = 0 + \frac{1}{2} \cdot \frac{dL}{L} - \frac{1}{2} \cdot \frac{dg}{g}\).
+Differentiating $\frac{dT}{T} = 0 + \frac{1}{2} \cdot \frac{dL}{L} - \frac{1}{2} \cdot \frac{dg}{g}$.
 
-Error relation: \(\frac{dT}{T} = \frac{1}{2} \frac{dL}{L}\).
+Error relation: $\frac{dT}{T} = \frac{1}{2} \frac{dL}{L}$.
 
-Error in value of \(L\) is 2% i.e., \(\frac{dL}{L} \times 100 = 2\).
+Error in value of $L$ is 2% i.e., $\frac{dL}{L} \times 100 = 2$.
 
-Then \(100 \times \frac{dT}{T} = \frac{1}{2} \cdot 2 \times \frac{dL}{L} \times 100 = \frac{1}{2} \times 2 = 1\). The percentage error in calculating value of \(T\) is 1.
+Then $100 \times \frac{dT}{T} = \frac{1}{2} \cdot 2 \times \frac{dL}{L} \times 100 = \frac{1}{2} \times 2 = 1$. The percentage error in calculating value of $T$ is 1.
 
-**ii**. Loss of error in value of \(T\) is 2 minutes per day i.e., \(\frac{dT}{T} = (-2) \times \frac{1}{60} \times \frac{1}{24}\).
+**ii**. Loss of error in value of $T$ is 2 minutes per day i.e., $\frac{dT}{T} = (-2) \times \frac{1}{60} \times \frac{1}{24}$.
 
 From the error relation
-\[
-\frac{dT}{T} \times 100 = -2 \times \frac{1}{60} \times \frac{1}{24} \times 100 = \frac{1 \cdot dL}{2 \cdot L} \times 100
-\]
-or \(100 \times \frac{dL}{L} = -\frac{1}{360} \times 100 = -0.2777 \approx -0.278\%\).
 
----
+$$
+\frac{dT}{T} \times 100 = -2 \times \frac{1}{60} \times \frac{1}{24} \times 100 = \frac{1 \cdot dL}{2 \cdot L} \times 100
+$$
+
+or $100 \times \frac{dL}{L} = -\frac{1}{360} \times 100 = -0.2777 \approx -0.278\%$.
+
+
 
 **Example 4**: The diameter and height of a right circular cylinder are measured to be 5 and 8 inches respectively. If each of these dimensions may be in error by ±0.1 inch, find the relative percentage error in volume of the cylinder.
 
-**Solution**: Let \(x\) be the diameter and \(y\) be the height of the cylinder then
-\[
-V = \text{volume of cylinder} = \pi \left(\frac{x}{2}\right)^2 y = \frac{1}{4} \pi x^2 y. \quad \left(\text{radius} = \frac{x}{2}\right)
-\]
-Differential:
-\[
-dV = \frac{1}{4} \pi \cdot 2xy \cdot dx + \frac{1}{4} \pi x^2 dy
-\]
-\[
-100 \times \frac{dV}{V} = \frac{2dx}{x} \times 100 + \frac{dy}{y} \times 100
-\]
+**Solution**: Let $x$ be the diameter and $y$ be the height of the cylinder then
 
-Given \(x = \text{diameter} = 5\) inches, \(y = \text{height} = 8\) inches, error \(dx = dy = \pm 0.1\). So
-\[
+$$
+V = \text{volume of cylinder} = \pi \left(\frac{x}{2}\right)^2 y = \frac{1}{4} \pi x^2 y. \quad \left(\text{radius} = \frac{x}{2}\right)
+$$
+
+Differential:
+
+$$
+dV = \frac{1}{4} \pi \cdot 2xy \cdot dx + \frac{1}{4} \pi x^2 dy
+$$
+
+$$
+100 \times \frac{dV}{V} = \frac{2dx}{x} \times 100 + \frac{dy}{y} \times 100
+$$
+
+Given $x = \text{diameter} = 5$ inches, $y = \text{height} = 8$ inches, error $dx = dy = \pm 0.1$. So
+
+$$
 100 \times \frac{dV}{V} = \pm \left(2 \cdot \frac{0.1}{5} + \frac{0.1}{8}\right) = \pm 0.0525
-\]
+$$
+
 Thus the percentage error in volume is \(\pm 0.0525\).
 
----
 
 **Exercise**
 
 1. Using differential, calculate approximately:
 
-    (a) \((2.98)^3\) (b) \(\sqrt[4]{4.05}\) (c) \(\left(1 + \frac{2.1}{3}\right)^{4}\) (d) \((83.7)^{1/4}\) (e) \(\sqrt{(1.997)}\) where \(y(x) = x^4 - 2x^3 + 9x + 7\)
+    (a) $(2.98)^3$ (b) $\sqrt[4]{4.05}$ (c) $\left(1 + \frac{2.1}{3}\right)^{4}$ (d) $(83.7)^{1/4}$ (e) $\sqrt{(1.997)}$ where $y(x) = x^4 - 2x^3 + 9x + 7$
 
-    **Hint**: Choose \(y = f(x)\), \(x\), and \(\Delta x\) as follows
+    **Hint**: Choose $y = f(x)$, $x$, and $\Delta x$ as follows
     
-    a. \(x^3\), \(x = 3\), \(\Delta x = -0.02\)
+    a. $x^3$, $x = 3$, $\Delta x = -0.02$
     
-    b. \(y = \sqrt{x}\), \(x = 4\), \(\Delta x = 0.5\)
+    b. $y = \sqrt{x}$, $x = 4$, $\Delta x = 0.5$
     
-    c. \(y = \left(1 + \frac{x}{2}\right)^2\), \(x = 0.1\)
+    c. $y = \left(1 + \frac{x}{2}\right)^2$, $x = 0.1$
     
-    d. \(y = x^{1/4}\), \(x = 81\), \(\Delta x = 2.7\)
-
----
-
-This content has been transcribed in markdown format, including equations, examples, and exercises.
+    d. $y = x^{1/4}$, $x = 81$, $\Delta x = 2.7$
 
 
-Certainly! Here is the content from the image written in Markdown:
-
----
 
 **Answers**:
 
@@ -1429,27 +1452,3 @@ $$
 $$
    1.6\pi \ \text{cu. cm}; \ \pi \ \text{sq. cm}
 $$
-
-### **3.11 DIFFERENTIATION UNDER INTEGRAL SIGN: LEIBNITZ'S RULE**
-
-We know from the fundamental theorem on integral calculus that if $f(x)$ is a continuous function and
-
-$$
-\phi(x) = \int_a^x f(t)dt, \text{then}
-$$
-
-
-$$
-\frac{d\phi}{dx} = f(x) = \frac{d}{dx} \int_a^x f(t)dt = f(x)
-$$
-
-i.e., the derivative of a definite integral w.r.t. the upper limit is equal to the integrand in which the variable of integration \(t\) is replaced by the upper limit $x$.
-
-**Example 1**: 
-
-$$
-(i) \ \frac{d}{dx} \int_1^x \frac{1}{t} dt = \frac{1}{x}, \quad x > 0
-$$
-
-Now if $F(x)$ is some antiderivative of a continuous function $f(x)$, then the Newton-Leibnitz formula $\int_a^b f(x)dx = F(b) - F(a)$ yields a practical and convenient method of computing definite integrals in cases where the anti-derivative of the integrand is known. This general method has extended.
-
