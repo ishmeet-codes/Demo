@@ -1218,7 +1218,7 @@ Errors in measured data will result in error in the estimated value. For example
 
 **Example:** If the error is 0.05 cm in measuring a dimension of length of 2 cm, then the absolute error is 0.05 cm, the relative error is \(\frac{0.05}{2} = 0.025\) cm, and the percentage error is \(100 \times 0.025 = 2.5\).
 
-For a function \(z = f(x, y)\), the actual error \(\Delta z\) in \(z\) can be calculated approximately by using the differential \(dz\), for given errors \(\Delta x\), \(\Delta y\) in \(x\) and \(y\) respectively.
+For a function \(z = f(x, y)\), the actual error \(\Delta z\) in \(z\) can be calculated approximately by using the differential \(dz\), for given errors \(\Delta x\), \(\Delta y\) in \(x\) and $y$ respectively.
 
 
 
@@ -1258,7 +1258,6 @@ $$
 
 **Example 2**: Considering the volume of a spherical shell as an increment of volume of a sphere, calculate approximately the volume of a spherical shell whose inner diameter is 8 inches and whose thickness is $\frac{1}{16}$ inch (Fig. 3.2).
 
-![Fig. 3.2](path/to/image.png)
 
 **Solution**: Volume of a sphere of radius $r$ is $V = \frac{4}{3} \pi r^3$. Now the volume of the spherical shell $\Delta V$ is the difference between volume $V_o$ of outer sphere and volume $V_i$ of inner sphere. Thus volume of the spherical shell is $\Delta V = V_o - V_i$. Here radius of the outer sphere $r = 4$ in (diameter is 8 inches) choose $r = 4$ and $dr = \frac{1}{16}$.
 
@@ -1355,82 +1354,95 @@ Thus the percentage error in volume is \(\pm 0.0525\).
 
 2. If the radius of a sphere is measured as 5 inches with a possible error of 0.02 inches, find approximately the greatest possible error and percentage error in the computed value of the volume.
 
-   **Hint**: 
-   \[
-   V = \frac{4}{3}\pi r^3, \ dV = 4\pi r^2 dr, \ r = 5, \ dr = 0.02, \ dV = \pm 2\pi, \ V = \frac{500\pi}{3}
-   \]
+**Hint**:
+   
+$$
+V = \frac{4}{3}\pi r^3, \ dV = 4\pi r^2 dr, \ r = 5, \ dr = 0.02, \ dV = \pm 2\pi, \ V = \frac{500\pi}{3}
+$$
 
-   **Answer**: 
-   \[
-   \pm 0.012, \ \pm 1.2\%
-   \]
+**Answer**:
+   
+$$
+\pm 0.012, \ \pm 1.2\%
+$$
 
-3. The quantity \(Q\) of water flowing over a V-notch is given by the formula \(Q = cH^{5/2}\) where \(H\) is the head of water and \(c\) is a constant. Find the error in \(Q\) if the error in \(H\) is 1.5%.
+4. The quantity $Q$ of water flowing over a V-notch is given by the formula $Q = cH^{5/2}$ where $H$ is the head of water and $c$ is a constant. Find the error in $Q$ if the error in $H$ is 1.5%.
 
-   **Hint**: 
-   \[
-   \frac{dQ}{Q} = \frac{5}{2} \frac{dH}{H} = \frac{5}{2} (1.5)
-   \]
+**Hint**:
+   
+$$
+\frac{dQ}{Q} = \frac{5}{2} \frac{dH}{H} = \frac{5}{2} (1.5)
+$$
 
-   **Answer**: 
-   \[
-   3.75\%
-   \]
+**Answer**:
+   
+$$
+3.75\%
+$$
 
-4. Calculate the percentage increase in the pressure \(p\) corresponding to a reduction of \(\frac{1}{2}\%\) in the volume \(V\), if the \(p\) and \(V\) are related by \(pV^{1.4} = c\) where \(c\) is a constant.
+5. Calculate the percentage increase in the pressure $p$ corresponding to a reduction of $\frac{1}{2}\%$ in the volume $v$, if the $p$ and $v$ are related by $pV^{1.4} = c$ where $c$ is a constant.
 
-   **Hint**: 
-   \[
-   \text{Hint:} \ 100 \times \frac{dp}{p} = -1.4 \frac{dV}{V} \times 100 = (-1.4) \times \left(-\frac{1}{2}\right)
-   \]
+**Hint**:
+   
+$$
+\text{Hint:} \ 100 \times \frac{dp}{p} = -1.4 \frac{dV}{V} \times 100 = (-1.4) \times \left(-\frac{1}{2}\right)
+$$
 
-   **Answer**: 
-   \[
-   0.7
-   \]
+**Answer**:
+   
+$$
+0.7
+$$
 
-5. Find the possible error in (a) surface area (b) volume of a sphere of radius \(r\) if \(r\) is measured as 18.5 inches with a possible error of 0.1 inch.
+6. Find the possible error in (a) surface area (b) volume of a sphere of radius $r$ if $r$ is measured as 18.5 inches with a possible error of 0.1 inch.
 
-   **Answer**: 
-   \[
-   \text{(a)} \ 14.8\pi \ \text{sq. in} \quad \text{(b)} \ 136.97\pi \ \text{cubic inch}
-   \]
+**Answer**:
+   
+$$
+\text{(a)} \ 14.8\pi \ \text{sq. in} \quad \text{(b)} \ 136.97\pi \ \text{cubic inch}
+$$
 
-6. Show that the relative error in \(c\) due to a given error in \(\theta\) is minimum when \(\theta = 45^\circ\) if \(c = k \tan \theta\).
+7. Show that the relative error in $c$ due to a given error in $\theta$ is minimum when $\theta = 45^\circ$ if $c = k \tan \theta$.
 
-   **Hint**: 
-   \[
-   \frac{dc}{c} = \frac{2d\theta}{\sin 2\theta} \quad \text{minimum when} \ \sin 2\theta \ \text{is greatest i.e.,} \ 2\theta = 90.
-   \]
+   **Hint**:
+   
+$$
+\frac{dc}{c} = \frac{2d\theta}{\sin 2\theta} \quad \text{minimum when} \ \sin 2\theta \ \text{is greatest i.e.,} \ 2\theta = 90.
+$$
 
-7. Considering the area of a circular ring as an increment of area of a circle, find approximately the area of a ring whose inner and outer radii are 3 and 3.02 respectively.
+8. Considering the area of a circular ring as an increment of area of a circle, find approximately the area of a ring whose inner and outer radii are 3 and 3.02 respectively.
 
-   **Hint**: 
-   \[
-   A = \pi r^2, \quad \text{Area of circular ring} = A(3.02) - A(3) = 2\pi r \ dr \ \text{with} \ r = 3, \ dr = 0.02
-   \]
+**Hint**:
+   
+$$
+A = \pi r^2, \quad \text{Area of circular ring} = A(3.02) - A(3) = 2\pi r \ dr \ \text{with} \ r = 3, \ dr = 0.02
+$$
 
-   **Answer**: 
-   \[
-   0.12\pi
-   \]
-
-8. Find the percentage error in calculated value of volume of a right circular cone whose altitude is the same as the base radius and is measured as 5 inches with a possible error of 0.02 inches.
-
-   **Hint**: 
-   \[
-   V = \frac{1}{3}\pi r^2 h = \frac{1}{3}\pi r^3 \ \text{(as} \ r = h), \ \frac{dV}{V} = \frac{3dr}{r}, \ r = 5, \ dr = 0.02
+ **Answer**:
 
 $$
+0.12\pi
+$$
+
+10. Find the percentage error in calculated value of volume of a right circular cone whose altitude is the same as the base radius and is measured as 5 inches with a possible error of 0.02 inches.
+
+ **Hint**:
+   
+   $$
+   V = \frac{1}{3}\pi r^2 h = \frac{1}{3}\pi r^3 \ \text{(as} \ r = h), \ \frac{dV}{V} = \frac{3dr}{r}, \ r = 5, \ dr = 0.02
+   $$
+   
+
 **Answer**: 
 
 $$
-   1.2\%
+1.2\%
 $$
 
-9. Calculate the error in \(R\) if \(R = E/l\) and possible errors in $E$ and $l$ are 20% and 10% respectively.
+10. Calculate the error in $R$ if $R = E/l$ and possible errors in $E$ and $l$ are 20% and 10% respectively.
 
 **Hint**: 
+
 $$
    \frac{dR}{R} \times 100 = \left(\frac{dE}{E} - \frac{dl}{l}\right) \times 100 = 20 - 10 = 10
 $$
@@ -1444,11 +1456,13 @@ $$
 11. The diameter and the height of a right circular cylinder are measured as 4 cm and 6 cm respectively, with a possible error of 0.1 cm. Find approximately the maximum possible error in the computed value of the volume and surface area.
 
    **Hint**: 
+   
 $$
 V = \pi r^2 h = \frac{\pi D^2 H}{4}, \ dV = \frac{\pi}{4} [2D HdD + D^2 dH], \ S = 2\pi rh = \pi DH, \ dS = \pi [HdD + DdH].
 $$
 
 **Answer**: 
+
 $$
    1.6\pi \ \text{cu. cm}; \ \pi \ \text{sq. cm}
 $$
